@@ -7,12 +7,12 @@ import { Cartcontext } from "../../context/Context";
 
 const Homepage = () => {
   const [data, setdata] = useState([]);
-  const fetchData = async () => {
-    const response = await axios.get("https://fakestoreapi.com/products");
-    setdata(response.data);
-    console.log(data);
-  };
+ 
   useEffect(() => {
+      async function fetchData(){
+      const response = await axios.get("https://fakestoreapi.com/products");
+      setdata(response.data);
+    }
     fetchData();
   }, []);
   const Globalstate = useContext(Cartcontext);
