@@ -1,0 +1,20 @@
+/** @format */
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+  background-color: #F40009;
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  
+}
+.nav .active {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
