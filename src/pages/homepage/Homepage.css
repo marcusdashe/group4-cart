@@ -22,7 +22,7 @@
 /* CSS */
 .button-37 {
   background-color: transparent;
-  border: 2px solid #F40009;
+  border: 2px solid var(--font-color);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
   box-sizing: border-box;

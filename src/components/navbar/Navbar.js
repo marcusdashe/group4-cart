@@ -6,8 +6,11 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="nav">
-      <NavLink to="/">Welcome to Group4 e-Marketplace</NavLink>
+      <div className="content">
+      <h1> <NavLink to="/">Orishirishi<sup>NG</sup></NavLink> </h1>
+      <small>The Hub for Quality Products</small>
       <NavLink to="/cart"> <ShoppingCartIcon fontSize="large"/> </NavLink>
+      </div>
     </div>
   );
 };
