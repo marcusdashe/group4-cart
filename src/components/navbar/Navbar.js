@@ -27,7 +27,7 @@ const Navbar = () => {
           </IconButton> 
       </NavLink>
       </div>
-      <marquee behavior="alternate">Orishirishi Black Friday - 4th/30th November</marquee>
+      {/* <marquee behavior="alternate">Orishirishi Black Friday - 4th/30th November</marquee> */}
     </div>
   );
 };
