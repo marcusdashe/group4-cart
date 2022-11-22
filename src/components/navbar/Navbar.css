@@ -10,7 +10,6 @@ body{
   background-color: var(--nav-bg-color);
   z-index: 10;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-
   align-content: center;
   
 }
@@ -18,7 +17,7 @@ body{
 .content{
   /* border:2px solid black; */
   width: 80%;
-  padding: 32px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
@@ -46,4 +45,9 @@ h1{
 .nav small{
   color: var(--font-color);
   font-size: 1rem;
+}
+
+marquee {
+  color: whitesmoke;
+  font-size: .8rem
 }

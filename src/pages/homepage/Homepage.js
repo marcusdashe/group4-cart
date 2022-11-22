@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import "./Homepage.css";
 import axios from "axios";
 import { Cartcontext } from "../../context/Context";
+import Footer from "../../components/footer/Footer"
 
 const Homepage = () => {
   const [data, setdata] = useState([]);
@@ -22,7 +23,7 @@ const Homepage = () => {
   const dispatch = Globalstate.dispatch;
   console.log(Globalstate);
 
-  return (
+  return (<>
     <div className="home">
       {data.map((item, index) => {
         item.quantity = 1;
@@ -30,7 +31,7 @@ const Homepage = () => {
           <div className="card" key={index}>
             <img src={item.image} alt="" />
             <p>{item.title}</p>
-            <h3>₦{(item.price * 90).toFixed(2)}</h3>
+            <h3>₦{(item.price *  443.50).toFixed(2)}</h3>
             <button className="button-37" onClick={(e)=> {
                 setSelected(!selected)
                 e.target.style.backgroundColor = selected ? "#00ff00" : "transparent"
@@ -48,6 +49,9 @@ const Homepage = () => {
         );
       })}
     </div>
+    <Footer />
+    
+    </>
   );
 };
 

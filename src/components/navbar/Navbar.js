@@ -4,14 +4,10 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton'; 
 import { Cartcontext } from "../../context/Context";
-
-
-
-
-
-
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+
+
 const Navbar = () => {
   const Globalstate = useContext(Cartcontext);
   const state = Globalstate.state;
@@ -31,6 +27,7 @@ const Navbar = () => {
           </IconButton> 
       </NavLink>
       </div>
+      <marquee behavior="alternate">Orishirishi Black Friday - 4th/30th November</marquee>
     </div>
   );
 };

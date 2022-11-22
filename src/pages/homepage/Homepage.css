@@ -3,8 +3,8 @@
 .home {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 200px;
-  gap: 150px;
+  padding: 180px;
+  gap: 100px;
   background-color: transparent;
 }
 .home .card {
@@ -52,4 +52,6 @@
     padding: 10px 30px;
   }
 }
+
+
 
